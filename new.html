@@ -22,6 +22,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -33,6 +34,32 @@
 	height: 50px;
 	width: 1280px;
 }
+.textstyle {
+	font-family: "微軟正黑體 Light";
+	font-size: 18px;
+	color: #000;
+	line-height: 25px;
+	text-align: justify;
+}
+.texttitle {
+	font-family: "微軟正黑體 Light";
+	font-size: 36px;
+	color: #F00;
+	text-align: center;
+}
+.transition {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	overflow: auto;
+}
+.transition:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -41,7 +68,43 @@
 <body>
 <div id="container">
   <div id="header"><img src="images/new.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="978" height="1520" border="0">
+      <tr>
+        <td height="47" colspan="2" align="center"><a name="top" id="top"></a>島呼冊店 ｜ <a href="#anchor01">HERMIT </a>｜<a href="#anchor02"> 巴美食堂</a></td>
+      </tr>
+      <tr>
+        <td height="104" colspan="2"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="textstyle"> 嘉義，這座以歷史與人情味著稱的城市，近年來成為地方創生的代表。特別是在「老屋新生」的推動下，許多帶著歲月痕跡的老建築，重新綻放出迷人的光彩。這些老屋不僅保留了文化記憶，更融入創意與現代元素，成為吸引青年創業與觀光旅客的重要平台。嘉義市政府推出的<strong>「舊屋力」計畫</strong>，更是催化老屋復興的關鍵。透過政府補助與媒合，吸引創業者進駐，將閒置的老建築轉變為多功能創意空間。從書店、展覽空間到特色餐廳，老屋的新生命體現了文化與商業的平衡。</span></p></td>
+      </tr>
+      <tr>
+        <td width="469" height="284"><p class="texttitle">島呼冊店</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="textstyle">從嘉義火車站後站出站後，沿著竹文街漫步約八分鐘，來到與北興街交叉的路口，一座有著Tiffany藍、木頭建構而成的老屋映入眼簾，二樓掛著「建高架，漲房價，有高價，沒有家」布條，一樓則有「我們支持非基改」，整座老屋彷彿成了社會理念的廣告牆。</span></p>
+        <p class="textstyle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 走進老屋，清一色是木頭本色，從樑柱、桌椅、櫃子等，都是木頭所建構而成，正對門口的展示櫃，一半是書，另一半則是生活雜貨。穿過書櫃、吧台，後方則有隱密的隔間，能夠不受打擾的坐在沙發、木椅上看書。</p>
+        <p class="textstyle">地址：嘉義市中山路257號</p>
+        <p class="textstyle">電話：05-2228831</p>
+        <p class="textstyle">資料來源：上下游</p></td>
+        <td width="499"><p><img src="images/newpic01.jpg" width="499" height="333" class="transition" /></p>
+        <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td><p class="texttitle"><a name="anchor01" class="transition" id="anchor01"></a>HERMIT</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="textstyle">「HERMIT」為隱士之意，也可衍生為寄居蟹（Hermit Crab），意指這個空間像時間沖刷走歷史卻沒被帶走的殼，深埋在細沙裡靜待尋回。而寄居其中的「寄居蟹」，也像是主理團隊「木更」的發展軌跡⸺從一開始寄居在文創空間一隅，到後來開始擁有自己的獨立空間，事業觸角也從咖啡店延伸至城市活動策劃首腦，甚至前往外縣市交流合作，每一個時期的空間（硬殼），都刻畫下木更作為品牌的成長軌跡。同時，這棟百年屋齡的木屋也如同⼀位隱⼠，低調佇立在巷弄轉⾓，⽊頭窗框透出澄黃的燈光，沒有張揚的招牌，像是和城市玩起捉迷藏的隱⾝之處。</span></p>
+        <p class="textstyle">地址：嘉義市東區成仁街209號 · </p>
+        <p class="textstyle">營業時間：11:00~18:00</p>
+        <p class="textstyle">資料來源：VOGUE Taiwan  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top"> top</a></p></td>
+        <td><img src="images/newpic02.jpg" width="500" height="391" class="transition" /></td>
+      </tr>
+      <tr>
+        <td height="21"><p class="texttitle"><a name="anchor02" id="anchor02"></a>巴美食堂</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="textstyle"> 位於嘉義市中央噴水池圓環邊，靠文化路夜市的一棟兩層樓矮房建築，與一旁高樓相比亦顯矮小。同為舊屋改建，對比嘉義「老房子」系列多了份溫暖樸實的手作感，一同感受老西服店過往的點滴與改造後新興食堂的魅力。</span></p>
+        <p class="textstyle">食堂的前身為「<strong>巴美西服店</strong>」(PA MEI Tailor Shop)，屋外仍保留日治時期嘉義市元町六丁目六番地住址。據簡介西服店在當年頗具盛名，來自大陸福州的原屋主在年少習得裁縫技藝後便來台打拼，於西元1946年於此開設了店舖，後來裁縫車嗒嗒聲因不敵成衣工廠量大低價的衝擊而銷聲匿跡。終致獲得嘉義市政府「舊有建築再利用」的補助店家。</p>
+        <p class="textstyle">地址：嘉義市東區公明路396號</p>
+        <p class="textstyle">電話：05-2250039</p>
+        <p class="textstyle">資料來源：Black MOMO&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#top">top</a></p></td>
+        <td><img src="images/newpic03.jpg" width="500" height="375" class="transition" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">舊屋曆</a>      </li>
       <li><a href="new.html">老屋新生</a></li>
