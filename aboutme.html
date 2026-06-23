@@ -22,6 +22,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -35,13 +36,68 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/aboutme.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">基本資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">設計理念</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <table width="746" height="146" border="1" align="center">
+            <tr>
+              <td width="300" rowspan="4"><img src="images/spkang.jpg" width="300" height="450" /></td>
+              <td width="436" align="center" bgcolor="#0099FF">個人資料</td>
+            </tr>
+            <tr>
+              <td> <p>姓名：</p>
+              <p>性別：</p>
+              <p>手機：</p>
+              <p>就讀學校：華南高商</p>
+              <p>科別：電子商務</p>
+              <p>E-Mail：</p></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FF9900">經歷</td>
+            </tr>
+            <tr>
+              <td> <p>高一：</p>
+              <p>高二：</p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="TabbedPanelsContent"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 近年來，嘉義市政府推行觀光旅遊，文化新絲路串聯美術館、檜意森活村、北門驛站重要場館與景點。定期舉辦的嘉義藝術 節、國際管樂節、音樂祭，為這條軸線帶來音樂律動的生命力。市政府推動舊屋力，老木屋轉身為兼具美感品味的商業空間，或是木構建築移除了破損廢棄的附掛物，再現建築原貌，「重新素顏」再現樸實木質美感，也讓人忍不住遙想過往充滿木頭香的嘉義街景。
+          
+          
+          
+          
+          </strong>
+          <p><strong>       我的網站設計理念主要介紹嘉義市舊屋歷、藝術特色及舊屋新生三個主題，每個主題以選出三個具有特色的內容來呈現。近年來，隨著嘉義市推行文創、老屋活化等政策，讓修繕後的老空間重生，成為涵育文化的創意平台。透過此網站讓外地人可以更加認識嘉義市在地老房子特色及新風貌。</strong></p>
+        </div>
+        <div class="TabbedPanelsContent">
+          <p>一、我學會了哪些技能？</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 這學期每週二節課的網頁製作課程學習下來，我已經學會了 利用PhotoImpact軟體去處理圖片及利用Dreamweaver 網頁製作軟體從無到有自己設計網頁，認識了HTML的語法並利用GitHub免費方式去學會架設網站，讓別人可以看到我設計的網頁。</p>
+          <p>二、學習過程遭遇的困難及解決方式？</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我發現網頁設計是需要花費許多時間去設計及修改，事先的圖片處理或設計需要花很多時間和想法去完成。在網頁設計方面利用Div標籤設計版面，當跑版時要利用程式碼去做修改，其中抓bug時是最麻煩的事，當找到問題並修改完成時，覺得好有成就感。 透過這樣的實作好好的充實自己，累積軟實力，或許有些技能看似無關緊要，但這些學習都是一種累積，透過這一點一滴的累積才能在這斜槓世代闖出屬於自己的人生！</p>
+          <p>三、我獲得了哪些能力？</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong jsaction="" jscontroller="zYmgkd#vvzi1e" data-sfc-root="c" jsuid="oUmAXe_1k" data-sfc-cb="" data-complete="true" data-copy-service-computed-style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; margin: 0px; text-decoration: none; border-bottom: 0px none rgb(10, 10, 10);">（一）邏輯思維與拆解問題能力
+              <!--TgQPHd|[]-->
+          </strong>：寫網頁需要了解清晰的程式步驟。</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp; （二）數位創造力：能將任何點子獨立做出網頁成品，都能完美呈現。</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp; （三）架設網站的能力：利用GitHub Pages免費架設個人網站</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="item"> <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">舊屋曆</a>      </li>
       <li><a href="new.html">老屋新生</a></li>
@@ -54,6 +110,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 </script>
 </body>
 </html>

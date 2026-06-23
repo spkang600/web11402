@@ -22,6 +22,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -33,15 +34,85 @@
 	height: 50px;
 	width: 1280px;
 }
+.titlestyle {
+	font-family: "微軟正黑體";
+	font-size: 36px;
+	color: #C30;
+	text-align: center;
+}
+.textword {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	text-align: left;
+}
+.pic {
+	margin-right: 50px;
+	margin-left: 100px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/art.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="967" height="560" border="0">
+      <tr>
+        <td colspan="2" align="center"><a name="top" id="top"></a>嘉義市美術館｜<a href="#a01">嘉義文學館</a>｜<a href="#a02">文化創意產業園區</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#FFFFCC"><p class="titlestyle">嘉義市美術館 </p></td>
+      </tr>
+      <tr>
+        <td height="226" colspan="2"><p class="textword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 嘉義市立美術館是一個與歷史建物共構再利用的設計案，基地位置在嘉義市中山路659號（興建美術館後改為廣寧街101號），嘉義市火車站的斜對面側。原基地上建物共分(A/B/C/D)四棟，之前為菸酒公賣局嘉義分局所使用，其外牆轉角為弧形，基座抬高，開窗與窗楣呈水平帶狀，強調了水平線條。立面貼有北投產的SCRATCH風格磁磚，是古典建築風格蛻變為現代主義建築風格歷史見證。而在一二樓樓梯處特別將柱頭、柱身設計為八邊稜角形的柱子，有日治後期日人東亞戰爭「八紘一宇」的象徵意涵，為空間的視覺焦點，2000年6月7日公告為嘉義市之古蹟。館內設施包含展覽廳、藝術教育區、多功能視聽室、咖啡店、餐廳與禮品店等空間。 <br />
+          開放時間&nbsp;週二至週日9:00-17:00(週一休館)<br />
+        </p>
+        <p class="textword">資料來源：建築師雜誌&nbsp; &nbsp;&nbsp; &nbsp; </p></td>
+      </tr>
+      <tr>
+        <td width="515"><img src="images/art01_s.jpg" width="300" height="200" class="pic" onclick="MM_openBrWindow('images/art01.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td width="442" align="center"><img src="images/art02_s.jpg" width="300" height="226" onclick="MM_openBrWindow('images/art02.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#99CCFF"><p class="titlestyle"><a name="a01" id="a01"></a>嘉義文學館：東門町1923</p></td>
+      </tr>
+      <tr>
+        <td colspan="2"><p class="textword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在嘉義建城 321 年之際，具有百年歷史的東門派出所正式定名為「嘉義文學館：東門町 1923」。為打造屬於嘉義文學的家嘉義文學館活化百年東門派出所，是嘉義市唯一現存的日治時代警察機關建築。由三棟日式建築組成，承載清代龍王廟遺跡。以文學為核心，淬鍊東門町百年底蘊，成為匯流嘉義城市記憶的文學交流平台。 <br />
+          嶄新場館識別設計則由出身嘉義的「早起設計事務所 matinal design  office™」打造，特意融合書法撇捺的飄逸與蒼勁，在文字中傳達嘉義文學館的文學意象。嘉義文學館的成立，是這座城市文化發展的重要時刻。它不只是一棟空間的啟用，更是嘉義文學長年累積的正式回應與致敬。從張李德和到近年活躍的鄭順聰、下港女子、劉子新等人，嘉義的文學從日治時期走到當代，始終以不同形式，記錄、思索、書寫這塊土地的身世與溫度。 </p>
+          <p class="textword">地址<strong>：&nbsp;</strong>600嘉義市東區東興里公明路236號 <br />
+        開放時間&nbsp;週二至週日10:00-18:00(週一休館)&nbsp; &nbsp;&nbsp; <a href="#top">top</a></p></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images/literature01_s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/literature01.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/literature02_s.jpg" width="300" height="225" onclick="MM_openBrWindow('images/literature02.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><p class="titlestyle"><a name="a02" id="a02"></a>嘉義文化創意產業園區 </p></td>
+      </tr>
+      <tr>
+        <td colspan="2"><p class="textword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 嘉義文化創意產業園區（G9創意園區）位於嘉義火車站旁，前身為1916年創建的「嘉義舊酒廠」，是臺灣最早生產高粱酒的酒廠，素有「白酒的故鄉」之稱 。
+          2000年代初，舊酒廠房房舍被指定為歷史建築。文化部將其規劃為全台五大文創園區之一。歷經修復與重新規劃，於2016年正式以「嘉義文化創意產業園區」之名轉型，致力於傳承在地傳統工藝與現代藝術結合。園區保留了洗瓶機、儲酒桶等工業遺址景觀，結合了藝術工作坊、品牌活動、藝文展覽等，活化這片擁有一百多年歷史的場域。 <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 文化部規劃之嘉義文創園區的定位為「傳統藝術創新」嘉義地區的傳統產業與藝術發展歷史悠久且多元，如交趾陶、阿里山木業、視覺藝術及嘉義國際管樂節等諸多資源，另有嘉義市鐵道藝術村、交趾陶博物館、嘉義縣蔗埕文化園區、故宮南院等。與在地的節慶合作，如嘉義市國際管樂節，結合在地文化，在地資源串聯，使嘉義文創園區成為整合文資源的據點。 </p>
+        <p class="textword">資料來源：嘉義文化創意園區&nbsp; &nbsp;&nbsp; &nbsp; <a href="#top">top</a></p></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images/ccp01_s.jpg" width="300" height="218" onclick="MM_openBrWindow('images/ccp01.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/ccp02_s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/ccp02.jpg','','width=800,height=600')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item">  <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">舊屋曆</a>      </li>
       <li><a href="new.html">老屋新生</a></li>
